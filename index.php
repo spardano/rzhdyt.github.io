@@ -33,25 +33,38 @@
                     <div class="card-body">
                         <!-- nav -->
                         <ul class="nav nav-tabs profile-nav mb-4" id="profileTab" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" id="timeline-tab" data-toggle="tab"
-                                    href="#timeline" role="tab" aria-controls="timeline"
-                                    aria-selected="false">Timeline</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="timeline-tab" data-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="false">Timeline</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" id="about-tab" data-toggle="tab" href="#about"
-                                    role="tab" aria-controls="about" aria-selected="true">About</a></li>
-                            <li class="nav-item"><a class="nav-link" id="friends-tab" data-toggle="tab" href="#friends"
-                                    role="tab" aria-controls="friends" aria-selected="false">Friends</a></li>
-                            <li class="nav-item"><a class="nav-link" id="photos-tab" data-toggle="tab" href="#photos"
-                                    role="tab" aria-controls="photos" aria-selected="false">Photos</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="friends-tab" data-toggle="tab" href="#friends" role="tab" aria-controls="friends" aria-selected="false">Friends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="photos-tab" data-toggle="tab" href="#photos" role="tab" aria-controls="photos" aria-selected="false">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">contact</a>
+                            </li>
                         </ul>
                         <div class="tab-content" id="profileTabContent">
-                            <div class="tab-pane fade active show" id="timeline" role="tabpanel"
-                                aria-labelledby="timeline-tab">
+
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        hello
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- time line tab -->
+                            <div class="tab-pane fade active show" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
                                 <ul class="timeline clearfix">
                                     <li class="timeline-line"></li>
                                     <li class="timeline-item">
-                                        <div class="timeline-badge"><i
-                                                class="badge-icon bg-primary text-white i-Cloud-Picture"></i>
+                                        <div class="timeline-badge"><i class="badge-icon bg-primary text-white i-Cloud-Picture"></i>
                                         </div>
                                         <div class="timeline-card card">
                                             <div class="card-body">
@@ -59,25 +72,20 @@
                                                     added a
                                                     new photo
                                                     <p class="text-muted">3 hours ago</p>
-                                                </div><img class="rounded mb-2" src="assets/images/photo-wide-1.jpg"
-                                                    alt="" />
-                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a
-                                                        href="#">Comment</a>
+                                                </div><img class="rounded mb-2" src="assets/images/photo-wide-1.jpg" alt="" />
+                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a href="#">Comment</a>
                                                 </div>
                                                 <div class="input-group">
-                                                    <input class="form-control" type="text" placeholder="Write comment"
-                                                        aria-label="comment" />
+                                                    <input class="form-control" type="text" placeholder="Write comment" aria-label="comment" />
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-primary" id="button-comment1"
-                                                            type="button">Submit</button>
+                                                        <button class="btn btn-primary" id="button-comment1" type="button">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="timeline-item">
-                                        <div class="timeline-badge"><img class="badge-img"
-                                                src="assets/images/faces/1.jpg" alt="" /></div>
+                                        <div class="timeline-badge"><img class="badge-img" src="assets/images/faces/1.jpg" alt="" /></div>
                                         <div class="timeline-card card">
                                             <div class="card-body">
                                                 <div class="mb-1"><strong class="mr-1">Timothy Carlson</strong>
@@ -95,15 +103,12 @@
                                                     suscipit
                                                     ipsa.
                                                 </p>
-                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a
-                                                        href="#">Comment</a>
+                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a href="#">Comment</a>
                                                 </div>
                                                 <div class="input-group">
-                                                    <input class="form-control" type="text" placeholder="Write comment"
-                                                        aria-label="comment" />
+                                                    <input class="form-control" type="text" placeholder="Write comment" aria-label="comment" />
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-primary" id="button-comment2"
-                                                            type="button">Submit</button>
+                                                        <button class="btn btn-primary" id="button-comment2" type="button">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,31 +125,26 @@
                                 <ul class="timeline clearfix">
                                     <li class="timeline-line"></li>
                                     <li class="timeline-item">
-                                        <div class="timeline-badge"><i
-                                                class="badge-icon bg-danger text-white i-Love-User"></i></div>
+                                        <div class="timeline-badge"><i class="badge-icon bg-danger text-white i-Love-User"></i></div>
                                         <div class="timeline-card card">
                                             <div class="card-body">
                                                 <div class="mb-1"><strong class="mr-1">New followers</strong>
                                                     <p class="text-muted">2 days ago</p>
                                                 </div>
                                                 <p><a href="#">Henry krick</a> and 16 others followed you</p>
-                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a
-                                                        href="#">Comment</a>
+                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a href="#">Comment</a>
                                                 </div>
                                                 <div class="input-group">
-                                                    <input class="form-control" type="text" placeholder="Write comment"
-                                                        aria-label="comment" />
+                                                    <input class="form-control" type="text" placeholder="Write comment" aria-label="comment" />
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-primary" id="button-comment3"
-                                                            type="button">Submit</button>
+                                                        <button class="btn btn-primary" id="button-comment3" type="button">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="timeline-item">
-                                        <div class="timeline-badge"><i
-                                                class="badge-icon bg-primary text-white i-Cloud-Picture"></i>
+                                        <div class="timeline-badge"><i class="badge-icon bg-primary text-white i-Cloud-Picture"></i>
                                         </div>
                                         <div class="timeline-card card">
                                             <div class="card-body">
@@ -152,17 +152,13 @@
                                                     added a
                                                     new photo
                                                     <p class="text-muted">2 days ago</p>
-                                                </div><img class="rounded mb-2" src="assets/images/photo-wide-2.jpg"
-                                                    alt="" />
-                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a
-                                                        href="#">Comment</a>
+                                                </div><img class="rounded mb-2" src="assets/images/photo-wide-2.jpg" alt="" />
+                                                <div class="mb-3"><a class="mr-1" href="#">Like</a><a href="#">Comment</a>
                                                 </div>
                                                 <div class="input-group">
-                                                    <input class="form-control" type="text" placeholder="Write comment"
-                                                        aria-label="comment" />
+                                                    <input class="form-control" type="text" placeholder="Write comment" aria-label="comment" />
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-primary" id="button-comment4"
-                                                            type="button">Submit</button>
+                                                        <button class="btn btn-primary" id="button-comment4" type="button">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -179,6 +175,8 @@
                                     </li>
                                 </ul>
                             </div>
+
+                            <!-- about tab -->
                             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                                 <h4>Personal Information</h4>
                                 <p>
@@ -249,39 +247,34 @@
                                     iure sed
                                     aut animi dolor incidunt voluptatem. Blanditiis, nobis aut.</p>
                                 <div class="row">
-                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i
-                                            class="i-Plane text-32 text-primary"></i>
+                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i class="i-Plane text-32 text-primary"></i>
                                         <p class="text-16 mt-1">Travelling</p>
                                     </div>
-                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i
-                                            class="i-Camera text-32 text-primary"></i>
+                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i class="i-Camera text-32 text-primary"></i>
                                         <p class="text-16 mt-1">Photography</p>
                                     </div>
-                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i
-                                            class="i-Car-3 text-32 text-primary"></i>
+                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i class="i-Car-3 text-32 text-primary"></i>
                                         <p class="text-16 mt-1">Driving</p>
                                     </div>
-                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i
-                                            class="i-Gamepad-2 text-32 text-primary"></i>
+                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i class="i-Gamepad-2 text-32 text-primary"></i>
                                         <p class="text-16 mt-1">Gaming</p>
                                     </div>
-                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i
-                                            class="i-Music-Note-2 text-32 text-primary"></i>
+                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i class="i-Music-Note-2 text-32 text-primary"></i>
                                         <p class="text-16 mt-1">Music</p>
                                     </div>
-                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i
-                                            class="i-Shopping-Bag text-32 text-primary"></i>
+                                    <div class="col-md-2 col-sm-4 col-6 text-center"><i class="i-Shopping-Bag text-32 text-primary"></i>
                                         <p class="text-16 mt-1">Shopping</p>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- friends tab -->
                             <div class="tab-pane fade" id="friends" role="tabpanel" aria-labelledby="friends-tab">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="card card-profile-1 mb-4">
                                             <div class="card-body text-center">
-                                                <div class="avatar box-shadow-2 mb-3"><img
-                                                        src="assets/images/faces/16.jpg" alt="" />
+                                                <div class="avatar box-shadow-2 mb-3"><img src="assets/images/faces/16.jpg" alt="" />
                                                 </div>
                                                 <h5 class="m-0">Jassica Hike</h5>
                                                 <p class="mt-0">UI/UX Designer</p>
@@ -290,18 +283,14 @@
                                                     cumque.</p>
                                                 <button class="btn btn-primary btn-rounded">Contact
                                                     Jassica</button>
-                                                <div class="card-socials-simple mt-4"><a href=""><i
-                                                            class="i-Linkedin-2"></i></a><a href=""><i
-                                                            class="i-Facebook-2"></i></a><a href=""><i
-                                                            class="i-Twitter"></i></a></div>
+                                                <div class="card-socials-simple mt-4"><a href=""><i class="i-Linkedin-2"></i></a><a href=""><i class="i-Facebook-2"></i></a><a href=""><i class="i-Twitter"></i></a></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card card-profile-1 mb-4">
                                             <div class="card-body text-center">
-                                                <div class="avatar box-shadow-2 mb-3"><img
-                                                        src="assets/images/faces/2.jpg" alt="" />
+                                                <div class="avatar box-shadow-2 mb-3"><img src="assets/images/faces/2.jpg" alt="" />
                                                 </div>
                                                 <h5 class="m-0">Frank Powell</h5>
                                                 <p class="mt-0">UI/UX Designer</p>
@@ -310,18 +299,14 @@
                                                     cumque.</p>
                                                 <button class="btn btn-primary btn-rounded">Contact
                                                     Frank</button>
-                                                <div class="card-socials-simple mt-4"><a href=""><i
-                                                            class="i-Linkedin-2"></i></a><a href=""><i
-                                                            class="i-Facebook-2"></i></a><a href=""><i
-                                                            class="i-Twitter"></i></a></div>
+                                                <div class="card-socials-simple mt-4"><a href=""><i class="i-Linkedin-2"></i></a><a href=""><i class="i-Facebook-2"></i></a><a href=""><i class="i-Twitter"></i></a></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card card-profile-1 mb-4">
                                             <div class="card-body text-center">
-                                                <div class="avatar box-shadow-2 mb-3"><img
-                                                        src="assets/images/faces/3.jpg" alt="" />
+                                                <div class="avatar box-shadow-2 mb-3"><img src="assets/images/faces/3.jpg" alt="" />
                                                 </div>
                                                 <h5 class="m-0">Arthur Mendoza</h5>
                                                 <p class="mt-0">UI/UX Designer</p>
@@ -330,18 +315,14 @@
                                                     cumque.</p>
                                                 <button class="btn btn-primary btn-rounded">Contact
                                                     Arthur</button>
-                                                <div class="card-socials-simple mt-4"><a href=""><i
-                                                            class="i-Linkedin-2"></i></a><a href=""><i
-                                                            class="i-Facebook-2"></i></a><a href=""><i
-                                                            class="i-Twitter"></i></a></div>
+                                                <div class="card-socials-simple mt-4"><a href=""><i class="i-Linkedin-2"></i></a><a href=""><i class="i-Facebook-2"></i></a><a href=""><i class="i-Twitter"></i></a></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="card card-profile-1 mb-4">
                                             <div class="card-body text-center">
-                                                <div class="avatar box-shadow-2 mb-3"><img
-                                                        src="assets/images/faces/4.jpg" alt="" />
+                                                <div class="avatar box-shadow-2 mb-3"><img src="assets/images/faces/4.jpg" alt="" />
                                                 </div>
                                                 <h5 class="m-0">Jacqueline Day</h5>
                                                 <p class="mt-0">UI/UX Designer</p>
@@ -350,97 +331,74 @@
                                                     cumque.</p>
                                                 <button class="btn btn-primary btn-rounded">Contact
                                                     Jacqueline</button>
-                                                <div class="card-socials-simple mt-4"><a href=""><i
-                                                            class="i-Linkedin-2"></i></a><a href=""><i
-                                                            class="i-Facebook-2"></i></a><a href=""><i
-                                                            class="i-Twitter"></i></a></div>
+                                                <div class="card-socials-simple mt-4"><a href=""><i class="i-Linkedin-2"></i></a><a href=""><i class="i-Facebook-2"></i></a><a href=""><i class="i-Twitter"></i></a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- photos tab -->
                             <div class="tab-pane fade" id="photos" role="tabpanel" aria-labelledby="photos-tab">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <div class="card text-white o-hidden mb-3"><img class="card-img"
-                                                src="assets/images/products/headphone-1.jpg" alt="" />
+                                        <div class="card text-white o-hidden mb-3"><img class="card-img" src="assets/images/products/headphone-1.jpg" alt="" />
                                             <div class="card-img-overlay">
                                                 <div class="p-1 text-left card-footer font-weight-light d-flex">
-                                                    <span class="mr-3 d-flex align-items-center"><i
-                                                            class="i-Speach-Bubble-6 mr-1"></i>12</span><span
-                                                        class="d-flex align-items-center"><i
-                                                            class="i-Calendar-4 mr-2"></i>03.12.2018</span>
+                                                    <span class="mr-3 d-flex align-items-center"><i class="i-Speach-Bubble-6 mr-1"></i>12</span><span class="d-flex align-items-center"><i class="i-Calendar-4 mr-2"></i>03.12.2018</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card text-white o-hidden mb-3"><img class="card-img"
-                                                src="assets/images/products/headphone-2.jpg" alt="" />
+                                        <div class="card text-white o-hidden mb-3"><img class="card-img" src="assets/images/products/headphone-2.jpg" alt="" />
                                             <div class="card-img-overlay">
                                                 <div class="p-1 text-left card-footer font-weight-light d-flex">
-                                                    <span class="mr-3 d-flex align-items-center"><i
-                                                            class="i-Speach-Bubble-6 mr-1"></i>12</span><span
-                                                        class="d-flex align-items-center"><i
-                                                            class="i-Calendar-4 mr-2"></i>03.12.2018</span>
+                                                    <span class="mr-3 d-flex align-items-center"><i class="i-Speach-Bubble-6 mr-1"></i>12</span><span class="d-flex align-items-center"><i class="i-Calendar-4 mr-2"></i>03.12.2018</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card text-white o-hidden mb-3"><img class="card-img"
-                                                src="assets/images/products/headphone-3.jpg" alt="" />
+                                        <div class="card text-white o-hidden mb-3"><img class="card-img" src="assets/images/products/headphone-3.jpg" alt="" />
                                             <div class="card-img-overlay">
                                                 <div class="p-1 text-left card-footer font-weight-light d-flex">
-                                                    <span class="mr-3 d-flex align-items-center"><i
-                                                            class="i-Speach-Bubble-6 mr-1"></i>12</span><span
-                                                        class="d-flex align-items-center"><i
-                                                            class="i-Calendar-4 mr-2"></i>03.12.2018</span>
+                                                    <span class="mr-3 d-flex align-items-center"><i class="i-Speach-Bubble-6 mr-1"></i>12</span><span class="d-flex align-items-center"><i class="i-Calendar-4 mr-2"></i>03.12.2018</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card text-white o-hidden mb-3"><img class="card-img"
-                                                src="assets/images/products/iphone-1.jpg" alt="" />
+                                        <div class="card text-white o-hidden mb-3"><img class="card-img" src="assets/images/products/iphone-1.jpg" alt="" />
                                             <div class="card-img-overlay">
                                                 <div class="p-1 text-left card-footer font-weight-light d-flex">
-                                                    <span class="mr-3 d-flex align-items-center"><i
-                                                            class="i-Speach-Bubble-6 mr-1"></i>12</span><span
-                                                        class="d-flex align-items-center"><i
-                                                            class="i-Calendar-4 mr-2"></i>03.12.2018</span>
+                                                    <span class="mr-3 d-flex align-items-center"><i class="i-Speach-Bubble-6 mr-1"></i>12</span><span class="d-flex align-items-center"><i class="i-Calendar-4 mr-2"></i>03.12.2018</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card text-white o-hidden mb-3"><img class="card-img"
-                                                src="assets/images/products/iphone-2.jpg" alt="" />
+                                        <div class="card text-white o-hidden mb-3"><img class="card-img" src="assets/images/products/iphone-2.jpg" alt="" />
                                             <div class="card-img-overlay">
                                                 <div class="p-1 text-left card-footer font-weight-light d-flex">
-                                                    <span class="mr-3 d-flex align-items-center"><i
-                                                            class="i-Speach-Bubble-6 mr-1"></i>12</span><span
-                                                        class="d-flex align-items-center"><i
-                                                            class="i-Calendar-4 mr-2"></i>03.12.2018</span>
+                                                    <span class="mr-3 d-flex align-items-center"><i class="i-Speach-Bubble-6 mr-1"></i>12</span><span class="d-flex align-items-center"><i class="i-Calendar-4 mr-2"></i>03.12.2018</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card text-white o-hidden mb-3"><img class="card-img"
-                                                src="assets/images/products/watch-1.jpg" alt="" />
+                                        <div class="card text-white o-hidden mb-3"><img class="card-img" src="assets/images/products/watch-1.jpg" alt="" />
                                             <div class="card-img-overlay">
                                                 <div class="p-1 text-left card-footer font-weight-light d-flex">
-                                                    <span class="mr-3 d-flex align-items-center"><i
-                                                            class="i-Speach-Bubble-6 mr-1"></i> 12</span><span
-                                                        class="d-flex align-items-center"><i
-                                                            class="i-Calendar-4 mr-2"></i>03.12.2018</span>
+                                                    <span class="mr-3 d-flex align-items-center"><i class="i-Speach-Bubble-6 mr-1"></i> 12</span><span class="d-flex align-items-center"><i class="i-Calendar-4 mr-2"></i>03.12.2018</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- end tab -->
                         </div>
                     </div>
                 </div><!-- end of main-content -->
@@ -448,50 +406,56 @@
             <div class="flex-grow-1"></div>
             <div class="app-footer">
                 <div class="row">
-                    <div class="col-md-9">
-                        <h3>
-                            <p>
-                                <strong>Kontak Saya</strong>
-                            </p>
-                        </h3>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a href="form.basic.html">
-                                    <i class="i-Checkout"></i>
-                                    <span class="item-name">
-                                        Basic Elements
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="form.basic.html">
-                                    <i class="i-Checkout"></i>
-                                    <span class="item-name">
-                                        Basic Elements
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="form.basic.html">
-                                    <i class="i-Checkout"></i>
-                                    <span class="item-name">
-                                        Basic Elements
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="form.basic.html">
-                                    <i class="i-Checkout"></i>
-                                    <span class="item-name">
-                                        Basic Elements
-                                    </span>
-                                </a>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-md-12">
+                            <h3>
+                                <p>
+                                    <strong>Kontak Saya</strong>
+                                </p>
+                            </h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="form.basic.html">
+                                        <i class="i-Checkout"></i>
+                                        <span class="item-name">
+                                            Basic Elements
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="form.basic.html">
+                                        <i class="i-Checkout"></i>
+                                        <span class="item-name">
+                                            Basic Elements
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="form.basic.html">
+                                        <i class="i-Checkout"></i>
+                                        <span class="item-name">
+                                            Basic Elements
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="form.basic.html">
+                                        <i class="i-Checkout"></i>
+                                        <span class="item-name">
+                                            Basic Elements
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom border-top pt-3 d-flex flex-column flex-sm-row align-items-center">
-                    <!--  -->
+                    <div class="col-sm-12 text-center">
+                        © <?php echo date('Y'); ?> dibuat oleh <a href="">Rizky Hidayat</a>
+
+                    </div>
                 </div>
                 <!-- fotter end -->
             </div>
